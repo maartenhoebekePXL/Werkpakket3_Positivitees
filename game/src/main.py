@@ -11,7 +11,7 @@ def main():
     pygame.display.set_caption("Game")
     
     # Load your game assets and set up your game objects
-    character = pygame.image.load("assets/head.svg").convert_alpha() # Load image with alpha transparency support
+    character = pygame.image.load("game/assets/head.svg").convert_alpha() # Load image with alpha transparency support
 
     running = True
     while running:

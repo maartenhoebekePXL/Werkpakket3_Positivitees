@@ -1,43 +1,38 @@
-import pygame
-import sys
-import settings
+from kivy.app import App
+from kivy.uix.widget import Widget
+from kivy.uix.image import Image
+from kivy.graphics import Color, Rectangle
+from kivy.core.window import Window
+from kivy.clock import Clock
 
-# Define virtual viewport size (base resolution)
+class GameWidget(Widget):
+    def __init__(self, **kwargs):
+        super().__init__(**kwargs)
+        self._setup_game()
+        Clock.schedule_interval(self.update, 1.0 / 60.0)  # Schedule game updates at 60 FPS
 
-def main():
-    pygame.init()
-    screen = pygame.display.set_mode((settings.WIDTH, settings.HEIGHT))
-    clock = pygame.time.Clock()
-    pygame.display.set_caption("Game")
-    
-    # Load your game assets and set up your game objects
-    character = pygame.image.load("game/assets/head.svg").convert_alpha() # Load image with alpha transparency support
+    def _setup_game(self):
+        # Set up your game here (e.g., initialize game variables, set up graphics)
+        self._draw_car()
 
-    running = True
-    while running:
-        for event in pygame.event.get():
-            if event.type == pygame.QUIT:
-                running = False
-        
-        # Calculate scale factor
-        scale_factor_x = screen.get_width() / settings.WIDTH
-        scale_factor_y = screen.get_height() / settings.HEIGHT
-        
-        # Clear the screen
-        screen.fill((0, 0, 0))  # Fill with black
-        
-        # Draw your game content (scaled)
-        
-        # pygame.draw.rect(screen, (255, 255, 255), (100 * scale_factor_x, 100 * scale_factor_y, 50 * scale_factor_x, 50 * scale_factor_y))
-        screen.blit(character, (100 * scale_factor_x, 100 * scale_factor_y))
-        
-        # Update the display
-        pygame.display.flip()
-        
-        clock.tick(settings.FPS)  # Cap the frame rate
-        
-    pygame.quit()
-    sys.exit()
+    def _draw_car(self):
+        # Example of drawing a simple car (a rectangle for now)
+        # with self.canvas:
+        #     Color(1, 0, 0)  # Red color
+        #     self.car = Rectangle(pos=(self.center_x, self.y), size=(50, 100))
+        self.car = Image(source='game/assets/Car.png', size_hint=(None, None), size=(Window.size.x * 0.1, Window.size.y * 0.1))
+        self.add_widget(self.car)
 
-if __name__ == "__main__":
-    main()
+    def update(self, dt):
+        # Update your game logic here
+        pass
+
+class CarGameApp(App):
+    def build(self):
+        # Dynamically adjust the size to the device's dimensions
+        Window.size = (360, 640)  # This could be set to any default value
+        game_widget = GameWidget()
+        return game_widget
+
+if __name__ == '__main__':
+    CarGameApp().run()

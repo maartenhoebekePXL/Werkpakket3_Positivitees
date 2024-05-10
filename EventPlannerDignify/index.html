@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <link rel="stylesheet" href="https://use.typekit.net/ttn5keb.css">
+</head>
+<body>
+    <!-- <img style="height: 100dvh; position: fixed; z-index: -100; opacity: 50%;" src="assets/Slide 16_9 - 1.png" alt="index figma"> -->
+    <nav>
+        <div>
+            <a href="index.html"><img id="logo" src="assets/Dignify_Logo_Horizontal_White.png" alt="Dignify Logo White"></a>
+        </div>
+        <div id="pages">
+            <a href="calendar.html">Calendar</a>
+            <a href="upcoming.html">Upcoming</a>
+            <a id="add-button" href="add.html">Add</a>
+        </div>
+    </nav>
+    <main id="mainIndex">
+        <div id="home-top">
+            <div id="home-title">
+                <div  id="title-part1">
+                    <h1>Unveiling Tomorrow's</h1>
+                    <div class="title-blurredLines"></div>
+                </div>
+                <div id="title-part2">
+                    <h1>Excitement</h1>
+                    <div class="title-blurredLines"></div>
+                </div>
+            </div>
+            <div id="image-gallery">
+                <img src="#" alt="automatic image gallery">
+            </div>
+        </div>
+        <div id="home-extra">
+            <div id="sub-title">
+                <img src="assets/Home-Icon.svg" alt="icon">
+                <p>We help ambitious people to grow faster<br>through the power of Exciting Company Events</p>
+            </div>
+            <div id="soon-event">
+                <a href="#">
+                    <img id="soon-event-img" src="#" alt="first upcoming event image">
+                    <div id="soon-event-text">
+                        <p>Soon</p>
+                        <p>Event title</p>
+                    </div>
+                    <div id="soon-event-button">
+                        <button type="button">
+                            <div id="hover-circle"></div>
+                            <img id="first-visible" src="assets//Home-Arrow.svg" alt="Home arrow without hover">
+                            <img id="hover-visible" src="assets//Home-Arrow.svg" alt="Home arrow for hover">
+                        </button>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </main>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: "degular display", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            color: #ffffff;
+        }
+        body{
+            background-color: #041C1E;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+
+        /*---navigation---*/
+        nav{
+            width: 100%;
+            max-width: 1920px;
+            height: 94px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            position: absolute;
+            z-index: 1000;
+        }
+        nav #logo{
+            height: 48px;
+            width: auto;
+            margin: 46px 0 0 94px;
+        }
+        nav #pages{
+            background-color: #0A2225;
+            border: 1px solid #1D3132;
+            border-radius: 23px;
+            padding: 5px 5px 5px 0;
+            position: fixed;
+            top: 46px;
+            right: calc(50% - 960px + 94px);
+            font-size: 22px;
+            font-weight: 800;
+        }
+        nav #pages a{
+            text-decoration: none;
+            display: inline-block;
+        }
+        nav #pages a:first-of-type{
+            margin: 0 50px 0 25px;
+        }
+        nav #pages a:nth-child(2){
+            margin-right: 30px;
+        }
+        nav #pages #add-button{
+            padding: 11px 23px;
+            background-color: #AEF2F4;
+            border-radius: 18px;
+            color: #000000;
+        }
+        @media screen and (max-width: 1920px) {
+            nav #pages{
+                right: 94px;
+            }
+        }
+
+
+        /*---main for the index page---*/
+        #mainIndex{
+            height: calc(100dvh - 94px);
+            max-height: 1080px;
+            width: 100%;
+            max-width: 1920px;
+            overflow: hidden;
+            position: relative;
+            min-height: 100vh;
+        }
+        #home-top{
+            height: 100%;
+            width: 100%;
+        }
+        #home-title{
+            width: fit-content;
+            position: absolute;
+            top: 40%;
+            transform: translateY(-40%);
+            right: calc(864px + 78px);
+            display: flex;
+            flex-direction: column;
+            align-items: end;
+        }
+        #title-part1{
+            width: fit-content;
+            position: relative;
+            text-align: right;
+        }
+        #title-part1 h1{
+            font-size: 96px;
+        }
+        #title-part2{
+            width: fit-content;
+            position: relative;
+            text-align: right;
+        }
+        #title-part2 h1{
+            font-size: 128px;
+            font-style: italic;
+            color: #AEF2F4;
+        }
+        .title-blurredLines{
+            content: "";
+            width: 100%;
+            height: 30px;
+            background-color: #D8D7CC70;
+            filter: blur(10px);
+            position: absolute;
+            bottom: 0;
+        }
+        #image-gallery{
+            background-color:rgb(225, 16, 16);
+            width: 864px;
+            height: 100vh;
+            position: absolute;
+            top: 0;
+            right: 0;
+            border-radius: 90px 0 0 90px;
+            display: flex;
+            justify-content: center;
+        }
+        #image-gallery img{
+            height: 100%;
+            width: auto;
+            overflow: hidden;
+        }
+        #home-extra{
+            width: 100%;
+            max-width: 1920px;
+            height: fit-content;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            position: absolute;
+            bottom: 0;
+            background-color: #19473580;
+        }
+        #sub-title{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            position: absolute;
+            left: 94px;
+            bottom: 107px;
+        }
+        #sub-title img{
+            width: 40px;
+            height: 40px;
+        }
+        #sub-title p{
+            font-size: 36px;
+            margin-left: 25px;
+            text-align: right;
+        }
+        #soon-event{
+            position: absolute;
+            right: 94px;
+            bottom: 89px;
+            height: 132px;
+        }
+        #soon-event a{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            height: 132px;
+            background-color: #D9D9D930;
+            border-radius: 23px;
+            text-decoration: none;
+        }
+        #soon-event a #soon-event-img{
+            width: 94px;
+            height: 94px;
+            background-color: #D9D9D940;
+            border-radius: 18px;
+            margin: 19px 27px 19px 19px;
+        }
+        #soon-event a #soon-event-text p:first-of-type{
+            font-size: 20px;
+        }
+        #soon-event a #soon-event-text p:nth-child(2){
+            width: 225px;
+            font-size: 24px;
+            margin-top: 7px;
+        }
+        #soon-event a #soon-event-button button{
+            background: transparent;
+            width: 56px;
+            height: 56px;
+            border: 1px solid #ffffff;
+            border-radius: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 19px 0 27px;
+            position: relative;
+            overflow: hidden;
+        }
+        #soon-event a:hover #soon-event-button button{
+            border: 1px solid #ffffff00;
+            transition: all 0.2s ease-in-out;
+        }
+        #soon-event a #soon-event-button button #first-visible{
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            transition: all 0.2s ease-in-out;
+        }
+        #soon-event a:hover #soon-event-button button #first-visible{
+            left: 105%;
+            transform: translateX(55%);
+        }
+        #soon-event a #soon-event-button button #hover-visible{
+            position: absolute;
+            left: -55%;
+            transform: translateX(-55%);
+            transition: all 0.2s ease-in-out;
+            filter: invert(100%);
+        }
+        #soon-event a:hover #soon-event-button button #hover-visible{
+            left: 50%;
+        }
+        #soon-event a #soon-event-button button #hover-circle {
+            content: "";
+            width: 56px;
+            height: 56px;
+            border-radius: 100%;
+            background-color: #AEF2F4;
+            position: absolute;
+            left: -55%;
+            transform: translateX(-55%);
+            transition: all 0.2s ease-in-out;
+        }
+        #soon-event a:hover #soon-event-button button #hover-circle{
+            left: 50%;
+        }
+    </style>
+    <script>
+
+    </script>
+</body>
+</html>

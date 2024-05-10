@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add event</title>
+    <link rel="stylesheet" href="https://use.typekit.net/ttn5keb.css">
+    <link rel="stylesheet" href="tijdelijk.css">
+</head>
+<body>
+    <img style="height: 100dvh; position: fixed; z-index: -100; opacity: 50%;" src="assets/Slide 16_9 - 4.png" alt="add event figma">
+    <nav>
+        <div>
+            <a href="index.html"><img id="logo" src="assets/Dignify_Logo_Horizontal_White.png" alt="Dignify Logo White"></a>
+        </div>
+        <div id="pages">
+            <a href="calendar.html">Calendar</a>
+            <a href="upcoming.html">Upcoming</a>
+            <a id="add-button" href="add.html">Add</a>
+        </div>
+    </nav>
+    <main id="mainAddEvent">
+        <form id="form-blocks" method="post" action="[%LINK(100)%]">
+            <div class="form-content-block" id="basic-information">
+                <div class="form-content-title">
+                    <div class="form-content-ball"></div>
+                    <h2>Basic Information</h2>
+                </div>
+                <div class="form-content-row">
+                    <div class="labelInput">
+                        <label for="title">Title</label>
+                        <textarea name="title" id="title" cols="30" rows="10"></textarea>
+                    </div>
+                    <div id="date-image">
+                        <div class="labelInput">
+                            <label for="date">Date</label>
+                            <input type="date" name="date" id="date" required>
+                        </div>
+                        <div class="labelInput" id="imageDiv">
+                            <label for="image">Image</label>
+                            <input type="image" name="image" id="image">
+                        </div>
+                    </div>
+                    <div class="labelInput">
+                        <label for="startTime">Time</label>
+                        <label for="endTime" style="display: none;"></label>
+                        <div id="start-end-time">
+                            <div id="start-time">
+                                <p>From</p>
+                                <input type="time" name="startTime" id="startTime" required>
+                            </div>
+                            <div id="end-time">
+                                <p>Until</p>
+                                <input type="time" name="endTime" id="endTime" required>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-content-block" id="event-description-content">
+                <div class="form-content-title">
+                    <div class="form-content-ball"></div>
+                    <h2>Event Description</h2>
+                </div>
+                <div class="form-content-row">
+                    <div class="labelInput">
+                        <label for="event-description">Event Description</label>
+                        <input type="text" name="event-description" id="event-description" required>
+                    </div>
+                </div>
+            </div>
+            <div class="form-content-block" id="location-content">
+                <div class="form-content-title">
+                    <div class="form-content-ball"></div>
+                    <h2>Location</h2>
+                </div>
+                <div class="form-content-row">
+                    <div class="labelInput">
+                        <label for="location">Location</label>
+                        <input type="text" name="location" id="location" required>
+                    </div>
+                </div>
+            </div>
+            <div class="form-content-block" id="main">
+                <div class="form-content-title">
+                    <div class="form-content-ball"></div>
+                    <h2>Main</h2>
+                </div>
+                <div class="form-content-row">
+                    <div class="labelInput" id="invitation-description">
+                        <label for="invitation-text">Invitation Mail Description</label>
+                        <input type="text" name="invitation-text" id="invitation-text" required>
+                    </div>
+                    <div class="labelInput">
+                        <label for="invitation-date">Time of Invitation Mail</label>
+                        <label for="invitation-hour" style="display: none;"></label>
+                        <div id="invitation-date-hour">
+                            <input type="date" name="invitation-date" id="invitation-date">
+                            <input type="time" name="invitation-hour" id="invitation-hour">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-content-block" id="reminder">
+                <div class="form-content-title">
+                    <div class="form-content-ball"></div>
+                    <h2>Reminder</h2>
+                </div>
+                <div class="form-content-row">
+                    <div class="labelInput" id="reminder-description">
+                        <label for="reminder-text">Reminder Mail Description</label>
+                        <input type="text" name="reminder-text" id="reminder-text" required>
+                    </div>
+                    <div class="labelInput">
+                        <label for="reminder-date">Time of Reminder Mail</label>
+                        <label for="reminder-hour" style="display: none;"></label>
+                        <div id="reminder-date-hour">
+                            <input type="date" name="reminder-date" id="reminder-date">
+                            <input type="time" name="reminder-hour" id="reminder-hour">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-content-block" id="no-response">
+                <div class="form-content-title">
+                    <div class="form-content-ball"></div>
+                    <h2>No Response</h2>
+                </div>
+                <div class="form-content-row">
+                    <div class="labelInput" id="response-description">
+                        <label for="response-text">No Response Mail Description</label>
+                        <input type="text" name="response-text" id="response-text" required>
+                    </div>
+                    <div class="labelInput">
+                        <label for="response-date">Time of Reminder Mail</label>
+                        <label for="response-hour" style="display: none;"></label>
+                        <div id="response-date-hour">
+                            <input type="date" name="response-date" id="response-date">
+                            <input type="time" name="response-hour" id="response-hour">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <div class="animation">
+            <div id="cirkel1"></div>
+            <div id="cirkel2"></div>
+            <div id="cube1"></div>
+        </div>
+    </main>
+</body>
+</html>

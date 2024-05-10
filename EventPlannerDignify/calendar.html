@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendar</title>
+    <link rel="stylesheet" href="https://use.typekit.net/ttn5keb.css">
+</head>
+<body>
+    <img style="height: 100dvh; position: fixed; z-index: -100; opacity: 50%;" src="assets/Slide 16_9 - 2.png" alt="calendar figma">
+    <nav>
+        <div>
+            <a href="index.html"><img id="logo" src="assets/Dignify_Logo_Horizontal_White.png" alt="Dignify Logo White"></a>
+        </div>
+        <div id="pages">
+            <a href="calendar.html">Calendar</a>
+            <a href="upcoming.html">Upcoming</a>
+            <a id="add-button" href="add.html">Add</a>
+        </div>
+    </nav>
+    <main id="mainCalendar">
+        <div id="waves"></div>
+        <div id="calendar">
+            <div id="calendar-nav">
+                <div id="calendar-nav-banners">
+                    <!-- 31 20 margin semibold 48 -->
+                    <div id="calendar-nav-month">JAN</div>
+                    <div id="calendar-nav-year">2024</div>
+                </div>
+                <!-- 8 top 42 right margin semibold 64 -->
+                <div id="calendar-nav-header">
+                    <h1>Events Calendar</h1>
+                </div>
+            </div>
+            <div id="calendar-content">
+                <table>
+                    <tr id="table-days">
+                        <th id="monday">Monday</th>
+                        <th id="tuesday">Tuesday</th>
+                        <th id="wednesday">Wednesday</th>
+                        <th id="thursday">Thursday</th>
+                        <th id="friday">Friday</th>
+                        <th id="saturday">Saturday</th>
+                        <th id="sunday">Sunday</th>
+                    </tr>
+                    <tr class="table-dates">
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>6</td>
+                        <td>7</td>
+                    </tr>
+                    <tr class="table-dates">
+                        <td>8</td>
+                        <td>9</td>
+                        <td>10</td>
+                        <td>11</td>
+                        <td>12</td>
+                        <td>13</td>
+                        <td>14</td>
+                    </tr>
+                    <tr class="table-dates">
+                        <td>15</td>
+                        <td>16</td>
+                        <td>17</td>
+                        <td>18</td>
+                        <td>19</td>
+                        <td>20</td>
+                        <td>21</td>
+                    </tr>
+                    <tr class="table-dates">
+                        <td>22</td>
+                        <td>23</td>
+                        <td>24</td>
+                        <td>25</td>
+                        <td>26</td>
+                        <td>27</td>
+                        <td>28</td>
+                    </tr>
+                    <tr class="table-dates">
+                        <td>29</td>
+                        <td>30</td>
+                        <td>31</td>
+                        <td>1</td>
+                        <td>2 <p>Digitales Cocktail Party</p></td>
+                        <td>3</td>
+                        <td>4</td>
+                    </tr>
+                    <tr class="table-dates">
+                        <td>5</td>
+                        <td>6</td>
+                        <td>7</td>
+                        <td>8</td>
+                        <td>9</td>
+                        <td>10</td>
+                        <td>11</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </main>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: "degular display", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            color: #ffffff;
+        }
+        body{
+            background-color: #041C1E;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+
+        /*---navigation---*/
+        nav{
+            width: 100%;
+            max-width: 1920px;
+            height: 94px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            position: absolute;
+            z-index: 1000;
+        }
+        nav #logo{
+            height: 48px;
+            width: auto;
+            margin: 46px 0 0 94px;
+        }
+        nav #pages{
+            background-color: #0A2225;
+            border: 1px solid #1D3132;
+            border-radius: 23px;
+            padding: 5px 5px 5px 0;
+            position: fixed;
+            top: 46px;
+            right: calc(50% - 960px + 94px);
+            font-size: 22px;
+            font-weight: 800;
+        }
+        nav #pages a{
+            text-decoration: none;
+            display: inline-block;
+        }
+        nav #pages a:first-of-type{
+            margin: 0 50px 0 25px;
+        }
+        nav #pages a:nth-child(2){
+            margin-right: 30px;
+        }
+        nav #pages #add-button{
+            padding: 11px 23px;
+            background-color: #AEF2F4;
+            border-radius: 18px;
+            color: #000000;
+        }
+        @media screen and (max-width: 1920px) {
+            nav #pages{
+                right: 94px;
+            }
+        }
+
+
+        /*---main for the calendar page---*/
+        #mainCalendar{
+            height: calc(100dvh - 94px);
+            max-height: 1080px;
+            width: 100%;
+            max-width: 1920px;
+            overflow: hidden;
+            position: relative;
+            min-height: 100vh;
+        }
+        #calendar{
+            background-color: #F2F1E450;
+            max-width: 1732px;
+            width: calc(100% - 188px);
+            min-height: 500px;
+            height: calc(100% - 274px);
+            border-radius: 23px;
+            margin: 185px 94px 89px 94px;
+            overflow: hidden;
+        }
+        #calendar-nav{
+            width: 100%;
+            height: 122px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 0 42px 0 31px;
+        }
+        #calendar-nav-banners{
+            display: flex;
+            flex-direction: row;
+        }
+        #calendar-nav-month, #calendar-nav-year{
+            width: 130px;
+            height: 78px;
+            background-color: #142928;
+            border-radius: 0 0 21px 21px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 48px;
+            font-weight: 600;
+        }
+        #calendar-nav-year{
+            margin-left: 20px;
+        }
+        #calendar-nav-header h1{
+            font-size: 64px;
+            margin-top: 8px;
+            color: #000000;
+            font-weight: 600;
+        }
+        #calendar-content{
+            width: 100%;
+            height: 100%;
+            min-height: calc(100% - 122px);
+            max-height: calc(100% - 122px);
+            overflow-y: auto;
+        }
+        #calendar-content table{
+            width: 100%;
+            height: 100%;
+            background-color: #c30f0f40;
+            border-collapse: collapse;
+            table-layout: fixed;
+        }
+        #calendar-content table th{
+            width: calc(100% / 7);
+            height: 40px;
+            text-align: right;
+            font-size: 22px;
+            font-weight: 600;
+            padding-right: 20px;
+        }
+        #calendar-content table th:nth-child(odd){
+            /* background-color: chocolate; */
+        }
+        #calendar-content table th:nth-child(even){
+            /* background-color: violet; */
+        }
+        .table-dates{
+            /* height: 16.66%; */
+            height: auto;
+        }
+        .table-dates:nth-child(odd){
+            background-color: #aa141440;
+        }
+        .table-dates:nth-child(even){
+            background-color: #2985c640;
+        }
+        .table-dates td:nth-child(odd){
+            background-color: #17d23340;
+        }
+        .table-dates td:nth-child(even){
+            background-color: #c513cf40;
+        }
+        .table-dates td {
+            padding: 10px 0 0 20px;
+            vertical-align: top;
+            font-size: 22px;
+        }
+        .table-dates td p{
+            font-size: 22px;
+            font-weight: lighter;
+            margin-top: 3px;
+        }
+        @media screen and (max-height: 800px) {
+            #calendar-nav {
+                min-height: 80px;
+            }
+        }
+    </style>
+</body>
+</html>

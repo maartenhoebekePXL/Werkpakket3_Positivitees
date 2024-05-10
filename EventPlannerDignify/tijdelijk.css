@@ -1,0 +1,241 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "degular display", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #ffffff;
+}
+body{
+    background-color: #041C1E;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/*---navigation---*/
+nav{
+    width: 100%;
+    max-width: 1920px;
+    height: 94px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: absolute;
+    z-index: 1000;
+}
+nav #logo{
+    height: 48px;
+    width: auto;
+    margin: 46px 0 0 94px;
+}
+nav #pages{
+    background-color: #0A2225;
+    border: 1px solid #1D3132;
+    border-radius: 23px;
+    padding: 5px 5px 5px 0;
+    position: fixed;
+    top: 46px;
+    right: calc(50% - 960px + 94px);
+    font-size: 22px;
+    font-weight: 800;
+}
+nav #pages a{
+    text-decoration: none;
+    display: inline-block;
+}
+nav #pages a:first-of-type{
+    margin: 0 50px 0 25px;
+}
+nav #pages a:nth-child(2){
+    margin-right: 30px;
+}
+nav #pages #add-button{
+    padding: 11px 23px;
+    background-color: #AEF2F4;
+    border-radius: 18px;
+    color: #000000;
+}
+@media screen and (max-width: 1920px) {
+    nav #pages{
+        right: 94px;
+    }
+}
+
+
+/*---main for the add event page---*/
+#mainAddEvent{
+    height: calc(100dvh - 94px);
+    max-height: 1080px;
+    width: 100%;
+    max-width: 1920px;
+    /* overflow: hidden; */
+    position: relative;
+    min-height: 100vh;
+}
+/*---general classes---*/
+.form-content-block{
+    background-color: #132728;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 18px;
+    width: fit-content;
+    height: fit-content;
+}
+.form-content-title{
+    display: flex;
+    align-items: center;
+    margin: 15px 0 15px 30px;
+}
+.form-content-title h2{
+    font-size: 24px;
+}
+.form-content-ball{
+    content: "";
+    width: 13px;
+    height: 13px;
+    background-color: #C8B7DD;
+    border-radius: 100%;
+    margin-right: 3px;
+}
+.form-content-row{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 30px 25px 30px;
+}
+.labelInput{
+    display: flex;
+    flex-direction: column;
+}
+.labelInput label{
+    margin-left: 10px;
+}
+label{
+    font-size: 32px;
+    font-weight: 600;
+    height: 42px;
+    margin-bottom: 0;
+}
+input{
+    border: 1px solid #1D3132;
+    border-radius: 10px;
+    font-size: 20px;
+    color: #000000;
+    line-height: 1;
+}
+textarea{
+    border: 1px solid #1D3132;
+    border-radius: 10px;
+    font-size: 20px;
+    color: #000000;
+    line-height: 1;
+    resize: none;
+    width: 360px;
+    height: 150px;
+    padding: 5px 0 0 5px;
+}
+input[type=text]{
+    width: 360px;
+    height: 150px;
+}
+input[type=date]{
+    width: 153px;
+    height: 31px;
+    padding: 2px 10px;
+}
+input[type=image]{
+    width: 109px;
+    height: 31px;
+    padding: 2px 10px;
+}
+input[type=time]{
+    width: fit-content;
+    height: 31px;
+    text-align: center;
+}
+/*---specific id's and classes which are used once---*/
+/*---block 1---*/
+#form-blocks{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: space-between;
+    flex-wrap: wrap;
+    background-color: #8114d5;
+    /* width: calc(100% - 300px); */
+    width: 100%;
+    /* width: 1306px; */
+    height: 100%;
+    /* height: 733px; */
+    max-width: 1306px;
+    max-height: 733px;
+    /* margin: 227px 94px 120px 94px; */
+    margin: auto auto 89px auto;
+}
+#title{
+    width: 360px;
+    height: 31px;
+}
+#date-image{
+    display: flex;
+    flex-direction: row;
+    margin: 10px 0;
+}
+#imageDiv{
+    margin-left: 20px;
+}
+#start-end-time{
+    display: flex;
+}
+#start-time, #end-time{
+    display: flex;
+    align-items: center;
+}
+#start-time p, #end-time p{
+    margin-right: 5px;
+}
+#end-time p{
+    margin-left: 10px;
+}
+/*---block 2---*/
+#event-description{
+    height: 196px;
+}
+/*---block 3---*/
+#location{
+    height: 196px;
+}
+/*---block 4, 5 and 6---*/
+#main label{
+    text-wrap: wrap;
+}
+#invitation-description, #reminder-description, #response-description{
+    margin-bottom: 10px;
+}
+#invitation-date-hour, #reminder-date-hour, #response-date-hour{
+    display: flex;
+}
+#invitation-date-hour input[type=time], #reminder-date-hour input[type=time], #response-date-hour input[type=time]{
+    margin-left: 10px;
+}
+#response-description label{
+    max-width: 350px;
+    white-space: nowrap;
+}
+textarea{
+    color: #000000;
+}
+/* 1728px */
+/* 1873px */
+@media (max-width: 1727px) {
+    #form-blocks {
+        /* width: calc(100% - 863px); */
+        max-width: 863px;
+        max-height: 2000px;
+        height: 1096px;
+    }
+}

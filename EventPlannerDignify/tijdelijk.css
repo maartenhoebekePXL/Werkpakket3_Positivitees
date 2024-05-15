@@ -5,7 +5,6 @@
     font-family: "degular display", sans-serif;
     font-weight: 400;
     font-style: normal;
-    color: #ffffff;
 }
 body{
     background-color: #041C1E;
@@ -48,6 +47,7 @@ nav #pages{
 nav #pages a{
     text-decoration: none;
     display: inline-block;
+    color: #ffffff;
 }
 nav #pages a:first-of-type{
     margin: 0 50px 0 25px;
@@ -79,6 +79,7 @@ nav #pages #add-button{
     /* min-height: 100vh; */
     min-height: calc(100vh - 94px);
     margin-top: 94px;
+    color: #ffffff;
 }
 /*---general classes---*/
 .form-content-block{
@@ -259,7 +260,7 @@ textarea{
 }
 
 /*---main for the upcoming events page---*/
-#mainAddEvent{
+#mainUpcomingEvents{
     height: calc(100dvh - 94px);
     max-height: 1080px;
     width: 100%;
@@ -270,5 +271,51 @@ textarea{
     min-height: calc(100vh - 94px);
     margin-top: 94px;
     color: #000000;
-    
+}
+/* #mainUpcomingEvents p,
+#mainUpcomingEvents h1,
+#mainUpcomingEvents h2,
+#mainUpcomingEvents h3,
+#mainUpcomingEvents h4,
+#mainUpcomingEvents h5,
+#mainUpcomingEvents h6,
+#mainUpcomingEvents a,
+#mainUpcomingEvents span,
+#mainUpcomingEvents div {
+    color: #000000;
+} */
+.upcomingEvents-titles{
+    margin: 92px 0 0 188px;
+}
+.upcomingEvents-titles h1{
+    font-size: 64px;
+    margin-left: 10px;
+    margin-bottom: 46px;
+}
+.upcomingEvents-titles h3{
+    font-size: 36px;
+}
+.upcomingEvents{
+    width: 100%;
+    margin: 92px auto 0 auto;
+    display: flex;
+    justify-content: center;
+}
+.upcomingEvents img{
+    width: 300px;
+    height: 300px;
+    border-radius: 18px;
+    object-fit: scale-down;
+}
+.upcomingEvents #upcomingEvents-textDiv{
+    margin-left: 94px;
+}
+.upcomingEvents #upcomingEvents-textDiv h1{
+    font-size: 48px;
+}
+.upcomingEvents #upcomingEvents-textDiv #upcomingEvents-date{
+    display: flex;
+    flex-direction: row;
+    margin: 5px 0 30px 0;
+    font-size: 24px;
 }

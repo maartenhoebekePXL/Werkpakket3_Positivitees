@@ -1,0 +1,155 @@
+.rows {
+  width: calc(100% - (46px * 2));
+  height: calc(100% - (47px * 2));
+  margin: 46px 0 0 47px;
+  position: relative;
+  color: #ffffff;
+  .row1 {
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    #cals {
+      background-color: #6a521360;
+    }
+    #heartBeat {
+      background-color: #712f2f60;
+    }
+    #steps {
+      background-color: #482e7160;
+    }
+    .health {
+      //   height: 333px;
+      height: 250px;
+      width: 30%;
+      display: flex;
+      flex-direction: column;
+      border-radius: 10px;
+      display: flex;
+      justify-content: space-between;
+      position: relative;
+      &-title {
+        display: flex;
+        align-items: center;
+        font-size: 24px;
+        font-weight: 500;
+        img {
+          margin: 15px 9px 0 20px;
+        }
+        p {
+          border-bottom: 2px solid #ffffff;
+          width: calc(100% - 22px - 9px - 43px - 21px);
+        }
+      }
+      &-counter {
+        border-top: 4px solid #ffffff;
+        font-weight: 500;
+        height: 82px;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        span {
+          font-size: 48px;
+          transform: translateY(10px);
+        }
+        p {
+          font-size: 20px;
+          margin-left: 20px;
+        }
+      }
+    }
+  }
+  .row2 {
+    width: 100%;
+    height: fit-content;
+    &-title {
+      font-size: 24px;
+      font-weight: 600;
+      width: 100%;
+      height: 40px;
+      margin-top: 20px;
+      border-bottom: 2px solid #ffffff;
+    }
+    &-boxes {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      &-row1 {
+        height: 45%;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin: 24px 0;
+      }
+      &-row2 {
+        height: 45%;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+    .BigActivity {
+      width: 47%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      border-radius: 10px;
+      font-size: 20px;
+      font-weight: 600;
+      position: relative;
+      &-div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 5px 10px 0 0;
+      }
+      p {
+        margin: 0 10px 5px 10px;
+      }
+      span {
+        font-size: 48px;
+      }
+      .activityImg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -1;
+      }
+    }
+    .SmallActivity {
+      width: 20%;
+      height: 100%;
+      border-radius: 10px;
+      font-size: 20px;
+      font-weight: 600;
+      position: relative;
+      p {
+        margin: 5px 10px 0 10px;
+      }
+      &-div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 5px 10px 0 0;
+        span {
+          font-size: 48px;
+        }
+      }
+      .activityImg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -1;
+      }
+    }
+  }
+}

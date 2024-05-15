@@ -1,12 +1,40 @@
-dateModified: 1715005540
+dateModified: 1715604363
 email:
   fromEmail: 12001844@student.pxl.be
   fromName: Positivitees
   transportType: craft\mail\transportadapters\Sendmail
+fs:
+  assets:
+    hasUrls: true
+    name: assets
+    settings:
+      path: $APACHE_SITE_TEMPLATE
+    type: craft\fs\Local
+    url: /files
 meta:
   __names__:
+    2df8d263-1cc5-40d6-ac1b-822cab899155: colors # colors
+    2f02a069-c0c5-4274-8910-2b5225233141: Blauw # Blauw
+    2f31dbb2-63f2-4126-a05b-cefeae14ad33: homeTitle # homeTitle
+    3bec2bb7-cff8-4bae-a458-c5f2042ab7a2: Instagram # Instagram
+    5e33a511-a67d-4afc-a2f0-bb8b4492a412: Blauw # Blauw
+    8bf4141d-26ac-43e1-b06f-294b902f253b: Kleur # Kleur
+    016ce467-07b7-4d9b-baf6-10598d7b7420: 'Public Schema' # Public Schema
+    181f3812-c92d-4c01-b557-c799dca352f1: Zwart # Zwart
+    185f4fd3-3f45-4507-b544-8c9316870cf9: 'Sneakers Overzicht' # Sneakers Overzicht
+    235b2faa-d353-45cc-8692-8b62b57a324c: Paars # Paars
+    762d7f17-b394-4888-8597-24de2f33a517: homeTitle # homeTitle
+    a7da1562-3927-4417-89bb-6e52198101cd: home # home
+    a9b1a9bd-abe4-4626-a05c-b5dcbb20c919: Groen # Groen
     aaf896d6-63eb-4bb4-a290-90337a31e01b: Positivitees # Positivitees
+    ac400d81-7487-4fd5-b630-5c14f8740629: 'Sociale Media' # Sociale Media
+    ad84e7e7-b515-4154-903d-45a5649d4581: Zwart # Zwart
+    bc312e20-887f-40c7-b503-7167836a9843: colors # colors
+    d7f1fba5-75ff-42df-862d-7b33f6ba3192: Paars # Paars
+    db8f02c3-9787-4137-be86-50546027876d: assets # assets
+    e0d1831c-6a64-4df4-8799-c9e442328315: 'Sneaker Overzicht' # Sneaker Overzicht
     e067a129-ed5f-49b4-a717-848f79f1a5c4: Positivitees # Positivitees
+    e86ed51d-f28d-4985-8319-ca5c3f825583: Geel # Geel
 system:
   edition: solo
   live: true

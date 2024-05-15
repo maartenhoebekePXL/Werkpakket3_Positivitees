@@ -1,0 +1,50 @@
+color: null
+fieldLayouts:
+  e1b6df98-d923-46eb-8365-eb04ccf6c25d:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: ac90f2ca-5d61-4d92-84d6-b97e55c9a14a
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 067e41f2-4dd1-453b-aa85-572ccda6cba0
+        userCondition: null
+handle: blauw
+hasTitleField: false
+icon: ''
+name: Blauw
+showSlugField: false
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: ''
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

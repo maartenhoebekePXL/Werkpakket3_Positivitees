@@ -1,0 +1,50 @@
+color: null
+fieldLayouts:
+  070c7bb1-7be7-4b66-91be-8bcef69e0d4b:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 139c4c04-7ea8-4151-a002-42ceba5e4334
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 7b41846f-39db-4b42-b2a1-6a127d2dd374
+        userCondition: null
+handle: SneakersOverview
+hasTitleField: true
+icon: ''
+name: 'Sneakers Overzicht'
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: ''
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

@@ -1,0 +1,65 @@
+color: null
+fieldLayouts:
+  91da9b63-260b-417c-a0f1-a837fae1d3c8:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: f3e50714-9a69-4b78-8ae5-d027e53313c4
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: d7f1fba5-75ff-42df-862d-7b33f6ba3192 # Paars
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: bdc4ba27-3ba4-4f26-be82-d8205637635c
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 6eeb6f2f-caff-4f32-985a-1d61de0b4096
+        userCondition: null
+handle: paars
+hasTitleField: false
+icon: ''
+name: Paars
+showSlugField: false
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: ''
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

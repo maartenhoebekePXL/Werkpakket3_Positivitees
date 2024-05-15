@@ -1,0 +1,45 @@
+{% extends '_layout.twig' %}
+
+{% set sneakers = craft.entries.section('sneakers').all() %}
+{% set colorParam = craft.app.request.getParam("color") %}
+{% set searchParam = craft.app.request.getParam("search") %}
+
+
+{% if colorParam|length %}
+    {% set sneakers = sneakers.relatedTo({ targetElement: colorParam }) %}
+{% endif %}
+
+{% if searchParam|length %}
+    {% set sneakers = sneakers.search(searchParam) %}
+{% endif %}
+
+{% set colors = craft.entries.section('colors').all() %}
+
+{% set sneakerEntries = sneakers.all() %}
+
+{% block content %}
+
+<form action="">
+    <select name="color" id="">
+        <option value="">Alle kleuren</option>
+        {% for color in colors %}
+        <option value="{{ color.id }}">{{ color.title }}</option>
+        {% endfor %}
+    </select>
+    <label for="search">ZOek een sneaker</label>
+    <input type="text" name="search">
+    <button type="submit">Filter</button>
+</form>
+
+
+{% if sneaker|length > 0%}
+    <div>
+    {% for sneaker in sneakers %}
+        {% include '_snippets/_sneakerCard.twig' %}
+    {% endfor %}
+    </div>
+{% elseif %}
+    <div>Er zijn geen sneaker beschikbaar.</div>
+{% endif %}
+
+{% endblock %}

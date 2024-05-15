@@ -13,7 +13,10 @@ body{
     flex-direction: column;
     align-items: center;
 }
-
+#bodyUpcomingEvent{
+    background-color: #F2F1E4;
+    color: #000000;
+}
 
 /*---navigation---*/
 nav{
@@ -73,7 +76,9 @@ nav #pages #add-button{
     max-width: 1920px;
     /* overflow: hidden; */
     position: relative;
-    min-height: 100vh;
+    /* min-height: 100vh; */
+    min-height: calc(100vh - 94px);
+    margin-top: 94px;
 }
 /*---general classes---*/
 .form-content-block{
@@ -115,7 +120,8 @@ nav #pages #add-button{
     margin-left: 10px;
 }
 label{
-    font-size: 32px;
+    /* font-size: 32px; */
+    font-size: 2em;
     font-weight: 600;
     height: 42px;
     margin-bottom: 0;
@@ -157,6 +163,7 @@ input[type=time]{
     height: 31px;
     text-align: center;
 }
+
 /*---specific id's and classes which are used once---*/
 /*---block 1---*/
 #form-blocks{
@@ -165,7 +172,7 @@ input[type=time]{
     justify-content: space-between;
     align-content: space-between;
     flex-wrap: wrap;
-    background-color: #8114d5;
+    /* background-color: #8114d5; */
     /* width: calc(100% - 300px); */
     width: 100%;
     /* width: 1306px; */
@@ -174,7 +181,7 @@ input[type=time]{
     max-width: 1306px;
     max-height: 733px;
     /* margin: 227px 94px 120px 94px; */
-    margin: auto auto 89px auto;
+    margin: 133px auto 0 auto;
 }
 #title{
     width: 360px;
@@ -235,7 +242,33 @@ textarea{
     #form-blocks {
         /* width: calc(100% - 863px); */
         max-width: 863px;
-        max-height: 2000px;
-        height: 1096px;
+        /* max-height: calc(fit-content + (5 * 23)); */
+        max-height: fit-content;
+        /* height: 1102px; */
+        height: 1191px;
+        padding-bottom: 89px;
     }
+}
+@media screen and (max-width: 1000px) {
+    #form-blocks{
+        max-width: 420px;
+        /* height: 2179px; */
+        height: 2268px;
+        padding-bottom: 89px;
+    }
+}
+
+/*---main for the upcoming events page---*/
+#mainAddEvent{
+    height: calc(100dvh - 94px);
+    max-height: 1080px;
+    width: 100%;
+    max-width: 1920px;
+    /* overflow: hidden; */
+    position: relative;
+    /* min-height: 100vh; */
+    min-height: calc(100vh - 94px);
+    margin-top: 94px;
+    color: #000000;
+    
 }

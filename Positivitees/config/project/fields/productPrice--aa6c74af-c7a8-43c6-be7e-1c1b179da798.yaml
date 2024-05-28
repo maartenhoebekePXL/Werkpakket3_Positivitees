@@ -1,0 +1,15 @@
+columnSuffix: null
+handle: productPrice
+instructions: null
+name: productPrice
+searchable: true
+settings:
+  currency: EUR
+  defaultValue: null
+  max: null
+  min: 0
+  showCurrency: true
+  size: null
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Money

@@ -1,0 +1,110 @@
+color: null
+fieldLayouts:
+  acefb43f-7f11-41e1-91b5-2bdb81297b49:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: d076e130-4ae0-43b1-981c-758747288402
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: e328ad9b-7e19-4027-a2d5-7179509f96e8 # shopImage
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 1c1cc783-770c-47ea-b9c2-826728bcfd2f
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 3aae521c-616e-41bf-a7c1-fe2c15caa780 # shopTitle
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 83c3c9cb-4051-4915-b573-a380c570bdcb
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 91575da7-dd2f-424f-a2b6-0de79f1f27f0 # shopCategories
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: c50a81eb-1904-425a-9836-5e8ee53a2e85
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: f7d7ed7d-b128-46b2-8a78-062c0910c16e
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 0f13b911-e887-46fc-ac9c-012fe333f388
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: f3e50e13-c324-414b-839b-9d7ba34686aa
+        userCondition: null
+handle: shop
+hasTitleField: false
+icon: ''
+name: shop
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: '{{"shop"}}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

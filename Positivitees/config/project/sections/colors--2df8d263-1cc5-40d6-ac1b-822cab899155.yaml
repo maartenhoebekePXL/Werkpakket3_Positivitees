@@ -1,10 +1,10 @@
 defaultPlacement: end
 enableVersioning: true
 entryTypes:
-  - bc312e20-887f-40c7-b503-7167836a9843 # colors
+  - bc312e20-887f-40c7-b503-7167836a9843
 handle: colors
-maxAuthors: 1
-name: colors
+maxAuthors: 2
+name: kleuren
 previewTargets:
   -
     __assoc__:

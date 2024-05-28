@@ -1,0 +1,20 @@
+{% extends "_layout.twig" %}
+{% block content %}
+
+{% set contactImage = entry.contactImage.one() %}
+
+<section class="banner">
+    {% if contactImage %}
+        <img src="{{ contactImage.url }}" alt="{{ contactImage.title }}">
+    {% endif %}
+</section>
+<main>
+    <div class="contact-container">
+        <h1>{{entry.contactTitle}}</h1>
+        <div>
+        {{craft.formie.renderForm('contactForm')}}
+        </div>
+    </div>
+
+</main>
+{% endblock %}

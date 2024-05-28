@@ -1,40 +1,84 @@
-dateModified: 1715604363
+dateModified: 1716924310
 email:
   fromEmail: 12001844@student.pxl.be
   fromName: Positivitees
   transportType: craft\mail\transportadapters\Sendmail
 fs:
-  assets:
+  files:
     hasUrls: true
-    name: assets
+    name: bestanden
     settings:
-      path: $APACHE_SITE_TEMPLATE
+      path: '@webroot/files'
     type: craft\fs\Local
     url: /files
 meta:
   __names__:
-    2df8d263-1cc5-40d6-ac1b-822cab899155: colors # colors
-    2f02a069-c0c5-4274-8910-2b5225233141: Blauw # Blauw
-    2f31dbb2-63f2-4126-a05b-cefeae14ad33: homeTitle # homeTitle
+    0d41c1f3-a9ea-45a1-8a7f-75a164c99138: formLabelName # formLabelName
+    1a10558c-3579-4dc8-8627-2bb1d7a7c173: profile # profile
+    1bc500a6-a9d5-4d53-b90e-0fbe86fa003b: formLabelEmail # formLabelEmail
+    2df8d263-1cc5-40d6-ac1b-822cab899155: kleuren # kleuren
+    2f31dbb2-63f2-4126-a05b-cefeae14ad33: startpagina # startpagina
+    3aae521c-616e-41bf-a7c1-fe2c15caa780: shopTitle # shopTitle
     3bec2bb7-cff8-4bae-a458-c5f2042ab7a2: Instagram # Instagram
-    5e33a511-a67d-4afc-a2f0-bb8b4492a412: Blauw # Blauw
-    8bf4141d-26ac-43e1-b06f-294b902f253b: Kleur # Kleur
+    3d695e1f-49b7-4807-8e4e-1a2b897bd3d7: shoppingCart # shoppingCart
+    3e24af6d-9a90-42a1-a18e-f20ad76c8079: filters # filters
+    3fb37c9e-e18b-47d6-aaff-09e7c38779f7: contactImage # contactImage
+    5d344ab3-65c4-42fc-8f10-4aba407490c8: 'product afbeelding' # product afbeelding
+    7d5991c0-c62e-4283-ae4a-c947a5287b97: 'home beschrijving titel' # home beschrijving titel
+    7f026d25-ee61-4c0d-8b8a-81f8f8489064: New # New
+    8ed5be18-72dd-4cbf-8960-6f64e7d643db: filters # filters
+    9b1d3bf0-3584-4f9d-a01e-53781687f80c: contactTitle # contactTitle
+    9e435fcd-09d4-4a16-bc81-1fa4d2492889: formLabelMessage # formLabelMessage
     016ce467-07b7-4d9b-baf6-10598d7b7420: 'Public Schema' # Public Schema
-    181f3812-c92d-4c01-b557-c799dca352f1: Zwart # Zwart
-    185f4fd3-3f45-4507-b544-8c9316870cf9: 'Sneakers Overzicht' # Sneakers Overzicht
-    235b2faa-d353-45cc-8692-8b62b57a324c: Paars # Paars
-    762d7f17-b394-4888-8597-24de2f33a517: homeTitle # homeTitle
-    a7da1562-3927-4417-89bb-6e52198101cd: home # home
-    a9b1a9bd-abe4-4626-a05c-b5dcbb20c919: Groen # Groen
+    16e1aeb8-d2d9-4a4e-b880-74304054809a: 'Contact Form' # Contact Form
+    18e84793-82dd-4e5b-9429-97d745ee3d24: 'product titel' # product titel
+    21ab221e-8467-4f3f-b7ac-bf51d4062619: 'home sub titel' # home sub titel
+    38e88252-5a56-4b0f-bc8a-2ff153cc9ca8: contactForm # contactForm
+    40e7b0e9-9f84-4223-afd8-7da568be1d75: contact # contact
+    483c11bc-3078-4459-bd55-559d4543ed3f: 'home beschrijving' # home beschrijving
+    746f4a2c-6a8e-40b7-8c86-cd708bdedb75: producten # producten
+    762d7f17-b394-4888-8597-24de2f33a517: titel # titel
+    1432aa77-91a3-4c46-ae5e-67d14ea3e104: 'product beschrijving' # product beschrijving
+    2199ce95-9bf0-4b7b-a99f-de9bb27ec98b: 'footer links' # footer links
+    4894cc6f-64bf-4175-beee-a3298268ccdf: 'home afbeelding' # home afbeelding
+    06365cff-a8f4-4949-80ad-4ce66af3c9e8: 'home sub titel beschrijving' # home sub titel beschrijving
+    91575da7-dd2f-424f-a2b6-0de79f1f27f0: shopCategories # shopCategories
+    921477a2-c52d-4434-bf24-8a9711419361: filters # filters
+    a7da1562-3927-4417-89bb-6e52198101cd: startpagina # startpagina
+    aa6c74af-c7a8-43c6-be7e-1c1b179da798: productPrice # productPrice
     aaf896d6-63eb-4bb4-a290-90337a31e01b: Positivitees # Positivitees
     ac400d81-7487-4fd5-b630-5c14f8740629: 'Sociale Media' # Sociale Media
-    ad84e7e7-b515-4154-903d-45a5649d4581: Zwart # Zwart
-    bc312e20-887f-40c7-b503-7167836a9843: colors # colors
-    d7f1fba5-75ff-42df-862d-7b33f6ba3192: Paars # Paars
-    db8f02c3-9787-4137-be86-50546027876d: assets # assets
+    b80ddae0-4192-4f49-a70b-313808aff65f: shop # shop
+    b385148e-838c-4678-94a7-77cbf5836e34: kaartjes # kaartjes
+    c4be8846-7097-47c0-bf8c-9e628c3bef0e: shop # shop
+    c2422d50-2f33-4584-a471-f4723ac48503: homeSelfie # homeSelfie
+    c4308a86-b4c2-40fc-962f-e8ce1334df41: contact # contact
+    d7363b3c-5ca7-49ff-b936-de8be698661e: kleding # kleding
+    db8f02c3-9787-4137-be86-50546027876d: bestanden # bestanden
+    dc1e312b-9dde-4289-81f2-7c24afeb5f58: products # products
     e0d1831c-6a64-4df4-8799-c9e442328315: 'Sneaker Overzicht' # Sneaker Overzicht
     e067a129-ed5f-49b4-a717-848f79f1a5c4: Positivitees # Positivitees
-    e86ed51d-f28d-4985-8319-ca5c3f825583: Geel # Geel
+    e9bd75d1-dac8-4e83-adbd-738f9eba83b5: profile # profile
+    e9cbfe8d-2cfc-4a3e-8081-a16ebcaea122: formLabelSubject # formLabelSubject
+    e328ad9b-7e19-4027-a2d5-7179509f96e8: shopImage # shopImage
+    f7bd25df-64c2-4d41-9ccf-93f32da4b5ef: shoppingCart # shoppingCart
+    f26446af-d66a-4492-be75-c897e2414afd: filter # filter
+plugins:
+  cookie-consent:
+    edition: standard
+    enabled: true
+    licenseKey: EB9C9QA7JYCIXLX70OXPMWN9
+    schemaVersion: 1.5.0
+  formie:
+    edition: standard
+    enabled: true
+    licenseKey: HTKB1QP8O10B7FCA5818GUIV
+    schemaVersion: 3.4.4
+  navigate:
+    edition: standard
+    enabled: true
+    licenseKey: MOH8JMUP26TBMSAJ6FBQLG6N
+    schemaVersion: 2.4.0
 system:
   edition: solo
   live: true

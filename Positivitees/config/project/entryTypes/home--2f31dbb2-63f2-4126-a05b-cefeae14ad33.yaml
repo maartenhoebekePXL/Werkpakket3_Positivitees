@@ -1,0 +1,155 @@
+color: null
+fieldLayouts:
+  73a8b7c4-708c-4934-be05-892336726850:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: f1cee7cf-fc83-4b95-ae99-42316df593d4
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 4894cc6f-64bf-4175-beee-a3298268ccdf # home afbeelding
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 5c640d4e-c111-45f2-b1a8-98d4bd277738
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 762d7f17-b394-4888-8597-24de2f33a517 # titel
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 8611a36a-99e7-4c82-866f-75f46c7a7fa7
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 21ab221e-8467-4f3f-b7ac-bf51d4062619 # home sub titel
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 092f8b4f-ee22-496e-a7ac-5c25ac83b0b8
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 06365cff-a8f4-4949-80ad-4ce66af3c9e8 # home sub titel beschrijving
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: cf61bc46-782d-4bbf-b47e-afbf1e857f5a
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 7d5991c0-c62e-4283-ae4a-c947a5287b97 # home beschrijving titel
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: ddca22da-52c1-4046-86a9-c474a377da95
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            elementCondition: null
+            fieldUid: 483c11bc-3078-4459-bd55-559d4543ed3f # home beschrijving
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 3704f957-255f-4786-a2f3-6c9f8109a3a5
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            elementCondition: null
+            fieldUid: c2422d50-2f33-4584-a471-f4723ac48503 # homeSelfie
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 58d0b9c6-c7af-4141-8069-bb01f67f2404
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 6dccccc8-d7fe-4355-aaa5-a159d57f7618
+        userCondition: null
+handle: home
+hasTitleField: false
+icon: ''
+name: startpagina
+showSlugField: false
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: '{{"startpagina"}}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

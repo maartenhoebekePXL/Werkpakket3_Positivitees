@@ -1,0 +1,27 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  - 3d695e1f-49b7-4807-8e4e-1a2b897bd3d7 # shoppingCart
+handle: shoppingcart
+maxAuthors: 2
+name: shoppingCart
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  e067a129-ed5f-49b4-a717-848f79f1a5c4: # Positivitees
+    enabledByDefault: true
+    hasUrls: true
+    template: _shoppingCart.twig
+    uriFormat: shoppingcart
+type: single

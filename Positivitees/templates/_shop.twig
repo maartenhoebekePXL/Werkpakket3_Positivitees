@@ -1,0 +1,96 @@
+{% extends "_layout.twig" %}
+{% block content %}
+
+{% set shopImage = entry.shopImage.one() %}
+{% set productQuery = craft.entries().section('products').limit(6) %}
+
+{% set filterParam = craft.app.request.getParam('filters') %}
+
+{# {% set selectedFilters = filterParam ? filterParam|split(',') : [] %} #}
+
+{% if filterParam is iterable %}
+    {% set selectedFilters = filterParam %}
+{% else %}
+    {% set selectedFilters = filterParam ? filterParam|split(',') : [] %}
+{% endif %}
+
+{% if selectedFilters|length %}
+    {% set productQuery = productQuery.relatedTo({
+        targetElement: selectedFilters,
+        field: 'filters'
+    }) %}
+{% endif %}
+
+{% paginate productQuery as pageInfo, pageEntries %}
+
+{% set filters = craft.entries.section('filters').all() %}
+
+<section class="banner">
+    {% if shopImage %}
+        <img src="{{ shopImage.url }}" alt="{{ shopImage.title }}">
+    {% endif %}
+</section>
+<main>
+<div class="product-introduction">
+    <h1>{{ entry.shopTitle }}</h1>
+</div>
+<div class="container">
+    <aside class="filter-zone">
+        <h2>{{ entry.shopCategories }}</h2>
+        {# <ul>
+            {% for diffFilters in filters %}
+                {% set isSelected = diffFilters.id in selectedFilters %}
+                <li>
+                    <a href="?filters={{ selectedFilters|merge([diffFilters.id])|join(',') }}" class="{% if isSelected %}active{% endif %}">
+                        {{ diffFilters.title }}
+                    </a>
+                </li>
+            {% endfor %}
+        </ul> #}
+        {# <form action="#">
+        {% for diffFilters in filters %}
+                {% set isSelected = diffFilters.id in selectedFilters %}
+                <label for="{{diffFilters}}">{{diffFilters}}</label>
+                <input type="checkbox" id="{{diffFilters}}" name="{{diffFilters}}" value="?filters={{ selectedFilters|merge([diffFilters.id])|join(',') }}" class="{% if isSelected %}active{% endif %}">
+            {% endfor %}
+        </form> #}
+        <form id="filterForm" method="GET" action="">
+            <ul>
+                {% for diffFilters in filters %}
+                    {% set isSelected = diffFilters.id in selectedFilters %}
+                    <li>
+                        <label>
+                            <input type="checkbox" name="filters[]" value="{{ diffFilters.id }}" {% if isSelected %}checked{% endif %} onchange="this.form.submit()">
+                            {{ diffFilters.title }}
+                        </label>
+                    </li>
+                {% endfor %}
+            </ul>
+        </form>
+    </aside>
+    <section id="homepage-products">
+        {% if pageEntries|length %}
+            {% for product in pageEntries %}
+                {% set image = product.productImage.one() %}
+                {% set price = product.productPrice|money('be') %}
+
+                {% if image %}
+                    {% include '_snippets/_productCard.twig' with {'product': product, 'image': image, 'price': price} %}
+                {% else %}
+                    {% include '_snippets/_productCard.twig' with {'product': product, 'price': price} %}
+                {% endif %}
+            {% endfor %}
+        {% else %}
+            <p>No products found for the selected filters.</p>
+        {% endif %}
+    </section>
+</div>
+<div class="pagination">
+    {% if pageInfo.prevUrl %}<a href="{{ pageInfo.prevUrl }}">&laquo;</a> {% endif %}
+    {% for i in 1..pageInfo.totalPages %}
+        <a href="{{ pageInfo.getPageUrl(i) }}" class="{% if i == pageInfo.currentPage %}active{% endif %}">{{ i }}</a>
+    {% endfor %}
+    {% if pageInfo.nextUrl %}<a href="{{ pageInfo.nextUrl }}">&raquo;</a> {% endif %}
+</div>
+</main>
+{% endblock %}

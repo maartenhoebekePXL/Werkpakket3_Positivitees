@@ -1,7 +1,7 @@
 columnSuffix: null
 handle: homeTitle
 instructions: null
-name: homeTitle
+name: titel
 searchable: true
 settings:
   byteLimit: null

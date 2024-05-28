@@ -1,0 +1,30 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  - 883ff816-c537-4a32-b0d6-a55e7a4a47dc
+handle: clothing
+maxAuthors: 2
+name: kleding
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  e067a129-ed5f-49b4-a717-848f79f1a5c4: # Positivitees
+    enabledByDefault: true
+    hasUrls: true
+    template: null
+    uriFormat: kleding
+structure:
+  maxLevels: 1
+  uid: 3ce90770-beec-45bb-8e56-a378cc24e02c
+type: structure

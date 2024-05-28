@@ -1,0 +1,155 @@
+color: null
+fieldLayouts:
+  bbb0837e-6a34-4edb-b387-13564baea904:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 737925c6-4b5e-4a7e-b371-eab2ffcf3cc1
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 3fb37c9e-e18b-47d6-aaff-09e7c38779f7 # contactImage
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 5ca71c65-278e-4c7f-917b-279e4f21e594
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 38e88252-5a56-4b0f-bc8a-2ff153cc9ca8 # contactForm
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 1b5f42a8-654f-476f-b4fa-a1906a761ef5
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 9b1d3bf0-3584-4f9d-a01e-53781687f80c # contactTitle
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 04142b8b-59d4-42ea-9009-9cc6fbf3abba
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 0d41c1f3-a9ea-45a1-8a7f-75a164c99138 # formLabelName
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 8c820573-4103-4de0-b204-c0b449d90a03
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 1bc500a6-a9d5-4d53-b90e-0fbe86fa003b # formLabelEmail
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: c94ea4c3-02f0-4aca-8c49-bf752d7c7fa5
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: e9cbfe8d-2cfc-4a3e-8081-a16ebcaea122 # formLabelSubject
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: c8f4fc4c-50fb-4416-91b3-d28e0f35295a
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 9e435fcd-09d4-4a16-bc81-1fa4d2492889 # formLabelMessage
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: ea42d0a9-db32-4eda-8e0c-d29a6921c8df
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: fdb4f045-4eae-43d9-bf0d-b408070501ce
+        userCondition: null
+handle: contact
+hasTitleField: false
+icon: ''
+name: contact
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: '{{"contact"}}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

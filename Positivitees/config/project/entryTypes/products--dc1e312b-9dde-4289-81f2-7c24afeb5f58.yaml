@@ -1,0 +1,125 @@
+color: null
+fieldLayouts:
+  5d7b2783-4ddd-4995-bed4-f69c6431bcf3:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: eecce167-9a71-478f-8341-dad40f38305e
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 5d344ab3-65c4-42fc-8f10-4aba407490c8 # product afbeelding
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 66e1c861-5058-4c29-bdfe-55c25c6e2584
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 18e84793-82dd-4e5b-9429-97d745ee3d24 # product titel
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 6aafdc9b-0939-42ed-938b-77d7f362161f
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 1432aa77-91a3-4c46-ae5e-67d14ea3e104 # product beschrijving
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: ebb3cd67-295d-47e4-bc8f-14b14ea0bdfa
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 8ed5be18-72dd-4cbf-8960-6f64e7d643db # filters
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 30a22bc1-29b1-4eaf-a373-17273e2d6025
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: aa6c74af-c7a8-43c6-be7e-1c1b179da798 # productPrice
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: d8ac297b-aee4-4751-941e-5d8ed9c6fe49
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: f64500f7-84b0-4449-84cb-14954f10c0f0
+        userCondition: null
+handle: products
+hasTitleField: true
+icon: ''
+name: products
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: ''
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

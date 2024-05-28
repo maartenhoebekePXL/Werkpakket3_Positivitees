@@ -1,0 +1,30 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  - 3e24af6d-9a90-42a1-a18e-f20ad76c8079 # filters
+handle: filters
+maxAuthors: 2
+name: filters
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  e067a129-ed5f-49b4-a717-848f79f1a5c4: # Positivitees
+    enabledByDefault: true
+    hasUrls: true
+    template: null
+    uriFormat: 'filters/{slug}'
+structure:
+  maxLevels: null
+  uid: 111c4efb-c3eb-4f9d-8d9d-8b093e90af01
+type: structure

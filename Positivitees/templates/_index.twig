@@ -1,0 +1,74 @@
+{% extends "_layout.twig" %}
+{% block content %}
+
+{% set productQuery = craft.entries().section('products').limit(3) %}
+{% paginate productQuery as pageInfo, pageEntries %}
+
+{% set homeImage = entry.homeImage.one() %}
+{% set homeSelfie = entry.homeSelfie.one() %}
+{% if homeImage %}
+<section class="banner">
+    <img src="{{homeImage.url}}" alt="{{homeImage.title}}">
+</section>
+{% endif %}
+<div class="titel">
+    <h2>{{entry.homeTitle}}</h2>
+</div>
+    <section id="homepage-products">
+{% if pageEntries|length %}
+    {% for product in pageEntries %}
+        {% set image = product.productImage.one() %}
+        {% set price = product.productPrice|money('be') %}
+
+        {% if image %}
+            {% include '_snippets/_productCard.twig' with {'product': product, 'image': image, 'price': price} %}
+        {% else %}
+            {% include '_snippets/_productCard.twig' with {'product': product, 'price': price} %}
+        {% endif %}
+    {% endfor %}
+{% endif %}
+    </section>
+    <div class="info">
+        <h1>{{entry.homeSubTitle}}</h1>
+        <p>{{entry.homeSubTitleDescription}}</p>
+    </div>
+    <div class="container1">
+        <aside class="tekst-zone">
+            <h2>{{entry.homeDescriptionTitle}}</h2>
+            <br>
+            <p>{{entry.homeDescription}}</p>
+
+            <br>
+
+            <p>Vanaf jonge leeftijd was ik al de creatiefste van de klas. Ik maakte allerlei tekeningen en knutselde
+                erop los. Altijd was ik het vrolijke bijtje van de groep.</p>
+
+            <p>Op mijn 18e begon er iets te kriebelen. Ik wilde dolgraag mijn creativiteit met iedereen delen. Daarom
+            startte ik LV Prints, een Instagram-bedrijfje waar ik mijn leuke t-shirtjes verkocht. Nu, drie jaar later,
+            ben ik trotse eigenaar van Positivitees, een webshop waar je alles kunt kopen dat ik helemaal zelf heb
+            gemaakt.</p>
+
+            <br>
+
+            <p>Naast het vrolijke zonnetje dat ik ben, heb ook ik moeilijke periodes gekend in mijn verleden. Juist
+            omdat ik uit eigen ervaring weet hoe lastig het kan zijn om daaruit te komen en de juiste hulp te vinden,
+            gaat de helft van mijn opbrengst naar TE GEK, een organisatie die zich inzet voor mensen die het mentaal
+            moeilijk hebben.</p>
+
+            <br>
+
+            <p>Helpen jullie mij mee om van de wereld een beter plekje te maken? Samen kunnen we een positieve impact
+            creëren. In mijn webshop vind je niet alleen unieke creaties, maar ook de mogelijkheid om iets goeds te doen
+            voor anderen. Laten we samen streven naar meer begrip, steun en vreugde.</p>
+
+            <br>
+
+            <p>Dank je wel voor je steun en het bezoeken van mijn website. Laten we samen stralen en de wereld vullen
+            met positieve vibes!</p>
+        </aside>
+        {% if homeSelfie %}
+            <img id="foto-van-lise" src="{{homeSelfie.url}}" alt="{{homeSelfie.title}}">
+        {% endif %}
+    </div>
+
+{% endblock %}
